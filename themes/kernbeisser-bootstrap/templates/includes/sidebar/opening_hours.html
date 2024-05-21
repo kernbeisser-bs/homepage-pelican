@@ -1,0 +1,16 @@
+{% from 'includes/sidebar/macros.jinja' import title %}
+<!-- Sidebar/Opening Hours -->
+<li class="list-group-item">
+  <h4>{{ title(_('Öffnungszeiten'), DISABLE_SIDEBAR_TITLE_ICONS, icon='door-open') }}</h4>
+  <table class="table">
+    <tbody>
+    {% for day, time in OPENING_HOURS %}
+    <tr>
+      <td>{{ day }}</td>
+      <td>{{ time }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</li>
+<!-- End Sidebar/Opening Hours -->
