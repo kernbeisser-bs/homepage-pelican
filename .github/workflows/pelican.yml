@@ -1,20 +1,21 @@
 name: Build and Deploy Pelican site
 on:
   push:
-  workflow_run:
+  pull_request:
+  workflow_dispatch:
     inputs:
       test-settings:
         type: string
+        description: "Settings file to use for testing"
         default: "pelicanconf.py"
       settings:
         type: string
+        description: "Settings file to use for building"
         default: "publishconf.py"
       output-path:
         type: string
+        description: "Path to output directory"
         default: "output"
-      cache-path:
-        type: string
-        default: "cache"
 permissions:
   contents: read
   pages: write
@@ -28,6 +29,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          submodules: recursive
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -35,11 +38,12 @@ jobs:
       - name: Install requirements
         run: pip install --no-cache-dir -r requirements.txt
       - name: Build Pelican site
-        run: pelican --settings ${{ inputs.test-settings }}
+        run: pelican --settings pelicanconf.py
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
-          path: ${{ inputs.output-path }}
+          name: "test"
+          path: output
           retention-days: 7
   Build:
     if: github.ref == 'refs/heads/main'
@@ -47,6 +51,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          submodules: recursive
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -54,12 +60,13 @@ jobs:
       - name: Install requirements
         run: pip install --no-cache-dir -r requirements.txt
       - name: Build Pelican site
-        run: pelican --settings ${{ inputs.settings }}
+        run: pelican --settings publishconf.py
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
-          path: ${{ inputs.output-path }}
-          retention-days: 7
+          name: "deploy"
+          path: output
+          retention-days: 1
   Deploy:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
@@ -67,14 +74,15 @@ jobs:
     steps:
       - name: Download a single artifact
         uses: actions/download-artifact@v4
-
+        with:
+          name: "deploy"
+          path: output
       - name: Set up SSH key
         run: |
-          eval $(ssh-agent -s)
-          ssh-add <(echo "${{ secrets.DEPLOY_SSH_KEY }}")
-          mkdir -p ~/.ssh
+          mkdir -p ~/.ssh/
+          echo "${{ secrets.DEPLOY_SSH_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
           echo "${{ secrets.DEPLOY_HOST_KEY }}" > ~/.ssh/known_hosts
-
       - name: Deploy to server
         run: |
-          echo "put -r ${{ inputs.output-path }}/*" | sftp ${{ secrets.DEPLOY_USERNAME }}@${{ secrets.DEPLOY_HOST }}:${{ secrets.DEPLOY_DIR }}
+          echo "put -r output/*" | sftp ${{ secrets.DEPLOY_USERNAME }}@${{ secrets.DEPLOY_HOST }}:${{ secrets.DEPLOY_DIR }}
