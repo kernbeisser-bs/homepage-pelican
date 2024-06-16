@@ -95,5 +95,5 @@ jobs:
           echo "mkdir ${UPLOAD_DIR}" | sftp ${{ secrets.DEPLOY_USERNAME }}@${{ secrets.DEPLOY_HOST }}:${BASE_DIR}
           echo "put -r ${UPLOAD_DIR}" | sftp ${{ secrets.DEPLOY_USERNAME }}@${{ secrets.DEPLOY_HOST }}:${BASE_DIR}
           echo -e "rename ${DEPLOY_DIR} ${OLD_DIR}\nrename ${UPLOAD_DIR} ${DEPLOY_DIR}" | sftp ${{ secrets.DEPLOY_USERNAME }}@${{ secrets.DEPLOY_HOST }}:${BASE_DIR}
-          echo "Successfully deployed, deleting temp files now
+          echo "Successfully deployed, deleting temp files now"
           echo "rm -r ${BASE_DIR}/${OLD_DIR}" | lftp -u ${{ secrets.DEPLOY_USERNAME }}, sftp://${{ secrets.DEPLOY_HOST }}
