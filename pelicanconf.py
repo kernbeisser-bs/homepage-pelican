@@ -10,6 +10,9 @@ DEFAULT_LANG = 'de'
 
 PAGES_SORT_ATTRIBUTE = 'sortorder'
 
+# Blog
+INDEX_SAVE_AS = 'blog.html'
+
 # Theme
 THEME = './themes/kernbeisser-bootstrap'
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
