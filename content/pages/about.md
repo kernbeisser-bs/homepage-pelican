@@ -12,7 +12,7 @@ Das macht uns aus:
 
 - Gesunde Lebensmittel aus biologischem Anbau, fair gehandelte Produkte und vieles aus Direktvermarktung
 - Ein volles Sortiment: Frisches Gemüse, Kühlwaren, Getränke und alles an Produkten für den Wocheneinkauf
-- Spaß am genossenschaftlichen Miteinander und dem selbstgeführten Laden
+- Spaß am genossenschaftlichen Miteinander und dem selbst geführten Laden
 - Natur- und Umweltschutz in unserer direkten Nachbarschaft durch den Verkauf von regionalen, ökologisch erzeugten Waren
 - Günstige Preise durch ehrenamtliches Engagement der Mitglieder
 
