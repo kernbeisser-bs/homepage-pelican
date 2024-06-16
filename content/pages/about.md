@@ -1,35 +1,35 @@
-Title: Über uns
+Title: Unser Laden
 Date: 2024-05-20
 Modified: 2024-05-20
 save_as: index.html
 sortorder: 1
 
-![Photo]({static}/images/banner/h-ladenblick-tür.jpg)
+![Photo]({static}/images/banner/h-banner_regalansicht2.jpg)
 
 ## Kernbeißer VEG eG – ein ganz besonderer Mitgliederladen
 
+Das macht uns aus:
+
 - Gesunde Lebensmittel aus biologischem Anbau, fair gehandelte Produkte und vieles aus Direktvermarktung
-- Spaß und Lust am genossenschaftlichen, selbst geführten Laden
-- Natur- und Umweltschutz in unserer direkten Nachbarschaft durch den Verkauf von regionalen Waren
-- Günstige Preise durch die Mitarbeit von Mitgliedern
+- Ein volles Sortiment: Frisches Gemüse, Kühlwaren, Getränke und alles an Produkten für den Wocheneinkauf
+- Spaß am genossenschaftlichen Miteinander und dem selbst geführten Laden
+- Natur- und Umweltschutz in unserer direkten Nachbarschaft durch den Verkauf von regionalen, ökologisch erzeugten Waren
+- Günstige Preise durch ehrenamtliches Engagement der Mitglieder
 
-## Unsere Arbeit:
+## Getragen von unseren Mitgliedern
 
-Wir betreiben unseren Laden weitgehend ohne Angestellte. Die aktiven Mitglieder übernehmen für ca. 3 – 5 Stunden pro Monat eine Aufgabe innerhalb der Genossenschaft: Warenannahme, Abpacken, Käsepflege, Verkauf, Reinigung u. a.
+Der gesamte Ladenbetrieb wird von unseren Mitgliedern organisiert. Zahlreiche Arbeitsgruppen sorgen für gefüllte Regale, ein freundliches Gesicht an der Kasse oder einen gewischten Boden. Dieses Engagement vernetzt uns nicht nur untereinander, sondern lässt uns unsere Waren günstig verkaufen.
 
-## Unsere Aktionen:
+## Unsere Ziele als Genossenschaft
 
-#### Apfelernte im Herbst
-In Zusammenarbeit mit der ASt e.V. beteiligen wir uns jedes Jahr an der Ernte von Äpfeln von regionalen Streuobstwiesen, zu deren Erhalt wir damit beitragen wollen. Der in einer Sonderpressung erzeugte Saft ist bei uns erhältlich.
+#### Faire Preise für Erzeuger:innen und Verbraucher:innen
+Wir kennen viele Erzeuger:innen persönlich und beziehen unsere Produkte möglichst ohne Zwischenhandel.
 
-#### Hofbesichtigungen
-Wir pflegen den persönlichen Kontakt mit unseren regionalen Erzeugern. Seit 2007 bieten wir organisierte Radtouren mit geführten Besichtigungen ihrer Betrieben an.
+#### Versorgung mit nachhaltigen Lebensmitteln
+Wir führen fast ausschließlich Waren aus kontrolliert biologischem Anbau. Gegenüber dem weniger strengen EU-Biosiegel werden Anbauverbände wie Bioland und demeter bevorzugt. Vielen Waren bieten wir in Pfandgläsern oder unverpackt an. Auch auf regionale Produkte und saisonal ausgewähltes Obst und Gemüse wird besonders Wert gelegt.
 
-#### Weinproben
-Unsere Winzer stellen hier ihre neuen Weine vor und geben einen Einblick in den ökologischen Weinbau.
+#### Besondere Unterstützung regionaler Anbieter
+Es werden bevorzugt regionale Produkte (Obst & Gemüse, Backwaren, Molkereiprodukte) bestellt und durch niedrigere Aufschläge günstiger verkauft als Großhandelsware. Nur wenn das regionale Angebot nicht ausreicht, wird überregional zugekauft.
 
-#### Tag der offenen Tür
-Wir veranstalten außerdem in unregelmäßigen Abständen einen Tag der offenen Tür für GenossInnen zum Kennenlernen und andere interessierte Menschen. Hier können auch ausgewählte Produkte probiert werden.
-
-#### Genuss & Dialog
-In einer inzwischen abgeschlossenen Reihe von April 2002 bis November 2005, luden wir insgesamt neun verschiedene ErzeugerInnen aus der Region ein und organisierten ein mehrgängiges “naturköstliches” Menü mit den typischen Produkten des jeweiligen Hofes. Dabei entstand ein Kennenlern- und Kochbuch. Genuss-und-Dialog Buch
+#### Natur- und Artenschutz in unserer unmittelbaren Nachbarschaft
+Biologische Landwirtschaft ist naturnah und nachhaltig. Durch die Zusammenarbeit mit Bio-Höfen in unserer Region fördern wir auch die Artenvielfalt auf den Äckern in und um Braunschweig.
