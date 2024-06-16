@@ -11,7 +11,7 @@ sortorder: 4
 Obst und Gemüse nach Jahreszeit, Eier, Käse, Backwaren, Wurst und Fleisch. Falls das regionale Angebot nicht ausreicht, wird das Sortiment durch überregionale Produkte ergänzt.
 
 #### Unverpackte Waren - selbst abgefüllt
-Nüsse, Hülsenfrüchte, Getreide oder auch Sonnenblumenkerne und Leinensamen werden dirket aus den 5 bis 25 kg-Säcken des Großhandels heraus zum Selbstabfüllen und damit unverpackt verkauft. Zahlreiche weitere Produkte bieten wir in Pfandgläsern an.
+Nüsse, Hülsenfrüchte, Getreide oder auch Sonnenblumenkerne und Leinsamen werden direkt aus den 5 bis 25 kg-Säcken des Großhandels heraus zum Selbstabfüllen und damit unverpackt verkauft. Zahlreiche weitere Produkte bieten wir in Pfandgläsern an.
 
 #### Günstiger Grundwarenkorb
 Eine Auswahl von rund 20 Grundwaren bieten wir besonders günstig an.
