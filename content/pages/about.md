@@ -18,7 +18,7 @@ Das macht uns aus:
 
 ## Getragen von unseren Mitgliedern
 
-Der gesamte Ladenbetrieb wird von unseren Mitgliedern organisiert. Zahlreiche Arbeitsgruppen sorgen für gefüllte Regale, ein freunldiches Gesicht an der Kasse oder einen gewischten Boden. Dieses Engagement vernetzt uns nicht nur untereinander, sondern lässt uns unsere Waren günstig verkaufen.
+Der gesamte Ladenbetrieb wird von unseren Mitgliedern organisiert. Zahlreiche Arbeitsgruppen sorgen für gefüllte Regale, ein freundliches Gesicht an der Kasse oder einen gewischten Boden. Dieses Engagement vernetzt uns nicht nur untereinander, sondern lässt uns unsere Waren günstig verkaufen.
 
 ## Unsere Ziele als Genossenschaft
 
