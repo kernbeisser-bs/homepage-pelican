@@ -2,7 +2,8 @@ Title: Unser Laden
 Date: 2024-05-20
 Modified: 2024-05-20
 save_as: index.html
-sortorder: 1
+sortorder: 0
+status: hidden
 
 ![Photo]({static}/images/banner/h-banner_regalansicht2.jpg)
 

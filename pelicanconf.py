@@ -11,7 +11,9 @@ DEFAULT_LANG = 'de'
 PAGES_SORT_ATTRIBUTE = 'sortorder'
 
 # Blog
-INDEX_SAVE_AS = 'blog.html'
+INDEX_SAVE_AS = 'blog/index.html'
+ARTICLE_EXCLUDES = ['startpage']
+PAGE_PATHS = ['pages', 'startpage']
 
 # Theme
 THEME = './themes/kernbeisser-bootstrap'
