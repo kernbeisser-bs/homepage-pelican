@@ -85,4 +85,11 @@ jobs:
           echo "${{ secrets.DEPLOY_HOST_KEY }}" > ~/.ssh/known_hosts
       - name: Deploy to server
         run: |
-          echo "put -r output/*" | sftp ${{ secrets.DEPLOY_USERNAME }}@${{ secrets.DEPLOY_HOST }}:${{ secrets.DEPLOY_DIR }}
+          UPLOAD_DIR=$(basename $(mktemp -du))
+          OLD_DIR=$(basename $(mktemp -du))
+          BASE_DIR=$(dirname ${{ secrets.DEPLOY_DIR }})
+          DEPLOY_DIR=$(basename ${{ secrets.DEPLOY_DIR }})
+          echo "put -r output/*" | sftp ${{ secrets.DEPLOY_USERNAME }}@${{ secrets.DEPLOY_HOST }}:${BASE_DIR}/${UPLOAD_DIR}
+          echo "rename ${DEPLOY_DIR} ${OLD_DIR}" | sftp ${{ secrets.DEPLOY_USERNAME }}@${{ secrets.DEPLOY_HOST }}:${BASE_DIR}
+          echo "rename ${UPLOAD_DIR} ${DEPLOY_DIR}" | sftp ${{ secrets.DEPLOY_USERNAME }}@${{ secrets.DEPLOY_HOST }}:${BASE_DIR}
+          echo "rmdir ${OLD_DIR}" | sftp ${{ secrets.DEPLOY_USERNAME }}@${{ secrets.DEPLOY_HOST }}:${BASE_DIR}
