@@ -3,7 +3,7 @@ Date: 2024-05-20
 Modified: 2024-05-20
 sortorder: 5
 
-![Photo]({static}/images/banner/h-ladenblick-kasse.jpg)
+![Photo]({static}/images/banner/h-banner_ladenfront.jpg)
 
 ## Regional:
 
