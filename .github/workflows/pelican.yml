@@ -1,6 +1,8 @@
 name: Build and Deploy Pelican site
 on:
   push:
+    branches:
+      - main
   pull_request:
   workflow_dispatch:
     inputs:
@@ -20,9 +22,6 @@ permissions:
   contents: read
   pages: write
   id-token: write
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
 jobs:
   Build-test:
     runs-on: ubuntu-latest
@@ -71,12 +70,15 @@ jobs:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     needs: build
+    concurrency: deploy
     steps:
       - name: Download a single artifact
         uses: actions/download-artifact@v4
         with:
           name: "deploy"
           path: output
+      - name: Install lftp
+        run: sudo apt install -y lftp
       - name: Set up SSH key
         run: |
           mkdir -p ~/.ssh/
@@ -89,7 +91,9 @@ jobs:
           OLD_DIR=$(basename $(mktemp -du))
           BASE_DIR=$(dirname ${{ secrets.DEPLOY_DIR }})
           DEPLOY_DIR=$(basename ${{ secrets.DEPLOY_DIR }})
-          echo "put -r output/*" | sftp ${{ secrets.DEPLOY_USERNAME }}@${{ secrets.DEPLOY_HOST }}:${BASE_DIR}/${UPLOAD_DIR}
-          echo "rename ${DEPLOY_DIR} ${OLD_DIR}" | sftp ${{ secrets.DEPLOY_USERNAME }}@${{ secrets.DEPLOY_HOST }}:${BASE_DIR}
-          echo "rename ${UPLOAD_DIR} ${DEPLOY_DIR}" | sftp ${{ secrets.DEPLOY_USERNAME }}@${{ secrets.DEPLOY_HOST }}:${BASE_DIR}
-          echo "rmdir ${OLD_DIR}" | sftp ${{ secrets.DEPLOY_USERNAME }}@${{ secrets.DEPLOY_HOST }}:${BASE_DIR}
+          mv output/ ${UPLOAD_DIR}
+          echo "mkdir ${UPLOAD_DIR}" | sftp ${{ secrets.DEPLOY_USERNAME }}@${{ secrets.DEPLOY_HOST }}:${BASE_DIR}
+          echo "put -r ${UPLOAD_DIR}" | sftp ${{ secrets.DEPLOY_USERNAME }}@${{ secrets.DEPLOY_HOST }}:${BASE_DIR}
+          echo -e "rename ${DEPLOY_DIR} ${OLD_DIR}\nrename ${UPLOAD_DIR} ${DEPLOY_DIR}" | sftp ${{ secrets.DEPLOY_USERNAME }}@${{ secrets.DEPLOY_HOST }}:${BASE_DIR}
+          echo "Successfully deployed, deleting temp files now
+          echo "rm -r ${BASE_DIR}/${OLD_DIR}" | lftp -u ${{ secrets.DEPLOY_USERNAME }}, sftp://${{ secrets.DEPLOY_HOST }}
