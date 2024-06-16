@@ -3,7 +3,7 @@ Date: 2024-05-20
 Modified: 2024-05-20
 sortorder: 4
 
-![Photo]({static}/images/banner/h-säcke-lose-ware.jpg)
+![Photo]({static}/images/banner/h-banner_regalansicht1.jpg)
 
 **Wir führen das Vollsortiment eines Biofachhandels mit Vorrang für regionale Produkte.**
 
