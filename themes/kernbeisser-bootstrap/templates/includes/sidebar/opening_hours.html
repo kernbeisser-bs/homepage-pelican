@@ -12,5 +12,8 @@
     {% endfor %}
     </tbody>
   </table>
+  {% if OPENING_HOURS_NOTE %}
+  <p>{{ OPENING_HOURS_NOTE }}</p>
+  {% endif %}
 </li>
 <!-- End Sidebar/Opening Hours -->

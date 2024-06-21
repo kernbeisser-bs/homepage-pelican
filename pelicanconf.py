@@ -46,6 +46,7 @@ OPENING_HOURS = (
     ("Samstag", "11:30 - 14:00 Uhr"),
     ("Sonntag", "Geschlossen"),
 )
+OPENING_HOURS_NOTE = "Für Mitglieder interner Arbeitsgruppen ganztägig geöffnet"
 SIDEBAR_IMAGES = (
 
 )
