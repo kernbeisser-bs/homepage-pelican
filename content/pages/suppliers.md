@@ -9,7 +9,7 @@ sortorder: 5
 
 - [Hof Morgentau](http://www.hofmorgentau.de), inklusive Gemüse vom [Lindenhof](http://www.eilum.de/lindenhof.html) und der [Börde-Gärtnerei](https://www.boerdegaertnerei.de/)
 - [Bioland-Bauernhof, Klostergut Dibbesdorf – Jannes Wehmann und Luisa Garbe](http://www.klostergut-dibbesdorf.de)
-- [BIO-Brotladen - Vollkornbäckerei und Konditorei]([http://www.die-bio-bäckerei-am-elm.de](https://bio-brotladen.de/))
+- [BIO-Brotladen - Vollkornbäckerei und Konditorei](https://bio-brotladen.de/)
 - [Vollkornbäckerei & Konditorei SARTORIUS](http://www.sartoriusohg.de)
 - [Beates Bunte Tomaten](http://www.buntetomaten.jimdo.com)
 - [Hof im Greth](http://www.hof-im-greth.de)
