@@ -13,7 +13,8 @@ PAGES_SORT_ATTRIBUTE = 'sortorder'
 # Blog
 INDEX_SAVE_AS = 'blog/index.html'
 ARTICLE_EXCLUDES = ['startpage']
-PAGE_PATHS = ['pages', 'startpage']
+PAGE_PATHS = ['pages', 'startpage', 'mailinglists']
+PAGE_EXCLUDES = ['mailinglists']
 
 # Theme
 THEME = './themes/kernbeisser-bootstrap'
