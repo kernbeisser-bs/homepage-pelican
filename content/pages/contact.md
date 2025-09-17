@@ -14,7 +14,7 @@ E-Mail: vorstand(at)kernbeisser(punkt)de
 ```
 
 ### Vertretungsberechtigter Vorstand:
-Sonja Boutejdar, Lukas Ruck, Angela Ruttig, Dennis Zellmann
+Sonja Boutejdar, Sven Flemming, Anja Frenz-Dolle, Angela Ruttig, Jule Weigel
 
 ### Vorsitzende des Aufsichtsrates:
 Kathrin von Petzinger
